@@ -2,6 +2,7 @@
     "use strict";
     
     angular.module('myWebSite', ['ngRoute','WebSite'])
+    .constant('CONSTANT', { JSON: "http://zonword.github.io/data.json" })
     .config(config)
     
     config.$inject = ['$routeProvider', '$httpProvider']
