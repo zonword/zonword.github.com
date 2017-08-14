@@ -4,8 +4,8 @@
     angular.module('myWebSite')
     .controller('AccueilCtrl', MainController)
     
-    MainController.$inject = ['$scope','Info'];
-    function MainController($scope,Info) {
+    MainController.$inject = ['$q','$scope','Info'];
+    function MainController($q,$scope,Info) {
         $scope.Info = []
 
         function GetInfo(){ 
