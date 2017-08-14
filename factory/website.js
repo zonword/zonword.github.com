@@ -1,6 +1,6 @@
 (function() {
     "use strict";
-    angular.module('MainFactory', [])
+    angular.module('WebSite', [])
         .factory("Info", Info)
         
         Info.$inject = ['$q','$http','CONSTANT'];
