@@ -3,24 +3,13 @@
     angular.module('WebSite', [])
         .factory("Info", Info)
         
-        Info.$inject = ['$q','$http','CONSTANT'];
-        function Info($q,$http,CONSTANT) {
-           var url      = CONSTANT.URL+'ClasseA.php';
-           var config   = {
-                headers: {
-                    "Accept": "application/json;charset=utf-8",
-                    "Accept-Charset":"charset=utf-8"
-                }
-            };
-           
+        Info.$inject = ['CONSTANT'];
+        function Info(CONSTANT) {
+           var url      = CONSTANT.JSON;
+                                 
            var Get = () => {
               var q = $q.defer();
-              $http({method: 'GET', url: url, params: { action: "Get"} })
-                 .then(res => {
-                    q.resolve(res)
-                 }, err => {
-                    q.reject(err)
-                 });
+              q.resolve(url.Information)
               return q.promise;
            }
            
