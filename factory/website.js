@@ -9,7 +9,7 @@
                                  
            var Get = () => {
               var q = $q.defer();
-              q.resolve(url.Information)
+              q.resolve(url)
               return q.promise;
            }
            
