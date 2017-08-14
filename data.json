@@ -1,0 +1,73 @@
+{
+  "Information": {
+    "Prenom": "kevin",
+    "Nom": grondin
+  },
+  "Diplome": [ 
+    {
+      "Niveau":"Bac +2",
+      "Nom":"BTS IRIS"
+    },
+    {
+      "Niveau":"Bac",
+      "Nom":"STI Electrotechnique"
+    }
+  ],
+  "Job": [ 
+    {
+      "Entreprise":"Leclerc",
+      "Intitulé":"Technicien d'exploitation",
+      "Contrat":"CDI",
+      "Debut":"Janvier - 2015",
+      "Fin":"A ce jour"
+    },
+    {
+      "Entreprise":"Régions Reunion",
+      "Intitulé":"TICE",
+      "Contrat":"CDD",
+      "Debut":"Septembre - 2014",
+      "Fin":"Decembre - 2014"
+    },
+    {
+      "Entreprise":"Ghanty",
+      "Intitulé":"Technicien informatique",
+      "Contrat":"CDD",
+      "Debut":"Decembre - 2013",
+      "Fin":"Janvier - 2014"
+    }
+  ],
+  "Dev": [ 
+    {
+      "Nom":"NodeJs",
+      "Url":"NodeJs"
+    },
+    {
+      "Nom":"PHP",
+      "Url":"PHP"
+    },
+    {
+      "Nom":"Word",
+      "Url":"Word"
+    },
+    {
+      "Nom":"Outil-Favoris",
+      "Url":"Outil-Favoris"
+    },
+    {
+      "Nom":"Docker",
+      "Url":"Docker"
+    },
+    {
+      "Nom":"Angular",
+      "Url":"Angular"
+    },
+    {
+      "Nom":"Electron",
+      "Url":"Electron"
+    },
+    {
+      "Nom":"Batch",
+      "Url":"Batch"
+    }
+  ]
+}
