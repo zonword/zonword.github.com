@@ -3,13 +3,18 @@
     angular.module('WebSite', [])
         .factory("Info", Info)
         
-        Info.$inject = ['$q','CONSTANT'];
-        function Info($q,CONSTANT) {
+        Info.$inject = ['$q','$http','CONSTANT'];
+        function Info($q,$http,CONSTANT) {
            var url      = CONSTANT.JSON;
                                  
            var Get = () => {
               var q = $q.defer();
-              q.resolve(url)
+              $http({method: 'GET', url: url})
+                 .then(res => {
+                    q.resolve(res)
+                 }, err => {
+                    q.reject(err)
+                 });
               return q.promise;
            }
            
