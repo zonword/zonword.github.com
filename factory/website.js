@@ -3,8 +3,8 @@
     angular.module('WebSite', [])
         .factory("Info", Info)
         
-        Info.$inject = ['CONSTANT'];
-        function Info(CONSTANT) {
+        Info.$inject = ['$q','CONSTANT'];
+        function Info($q,CONSTANT) {
            var url      = CONSTANT.JSON;
                                  
            var Get = () => {
