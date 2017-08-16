@@ -11,8 +11,8 @@
         function GetInfo(){ 
             Info.Get()
                 .then(function(data) {
-                    console.log(data.Information)
-                    $scope.Info = data.Information;
+                    console.log(data)
+                    $scope.Info = data;
                 }, function(err) {
                     console.log(err);
                 });
