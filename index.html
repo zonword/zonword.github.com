@@ -8,7 +8,7 @@
     </head>
     <body ng-app="myWebSite">
         
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" ng-controller="NavCtrl">
             <a class="navbar-brand" href="#">Zonword</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -16,10 +16,10 @@
 
             <div class="collapse navbar-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
+                    <li class="nav-item ng-class="{active: isActive('/CV')}">
                         <a class="nav-link" href="#">CV<span class="sr-only">(current)</span></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item" ng-class="{active: isActive('/Article')}">
                         <a class="nav-link" href="#">Article</a>
                     </li>
                     <li class="nav-item dropdown">
@@ -58,6 +58,7 @@
         <!--Main-->
         <script src="js/app.js"></script>
         <script src="factory/website.js"></script>
+        <script src="vue/Menu/NavCtrl.js"></script>
         <script src="vue/Accueil/AccueilCtrl.js"></script>
     </body>
 </html>
