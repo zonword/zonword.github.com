@@ -12,6 +12,14 @@
                 templateUrl: 'vue/Accueil/main.html',
                 controller: 'AccueilCtrl'
             }).
+            when('/CV', {
+                templateUrl: 'vue/CV/main.html',
+                controller: 'CvCtrl'
+            }).
+            when('/Article', {
+                templateUrl: 'vue/Article/list.html',
+                controller: 'ArticleCtrl'
+            }).
             otherwise({
                 redirectTo: '/Accueil'
             });
