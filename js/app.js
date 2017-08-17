@@ -9,15 +9,15 @@
     function config($routeProvider,$httpProvider) {
         $routeProvider.
             when('/Accueil', {
-                templateUrl: 'vue/Accueil/main.html',
+                templateUrl: 'component/Accueil/main.html',
                 controller: 'AccueilCtrl'
             }).
             when('/CV', {
-                templateUrl: 'vue/CV/main.html',
+                templateUrl: 'component/CV/main.html',
                 controller: 'CvCtrl'
             }).
             when('/Article', {
-                templateUrl: 'vue/Article/list.html',
+                templateUrl: 'component/Article/list.html',
                 controller: 'ArticleCtrl'
             }).
             otherwise({
