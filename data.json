@@ -3,7 +3,8 @@
     "Prenom": "kevin",
     "Nom": "Grondin",
     "Image": "https://avatars2.githubusercontent.com/u/6604220?v=4&s=100",
-    "Description": "I'm a full stack developer who specializes in AngularJS 1.x and NodeJs"
+    "DescriptionEN": "I'm a full stack developer who specializes in AngularJS 1.x and NodeJs",
+    "DescriptionFR": "Je suis developpeur full stack avec comme spécialité AngularJS 1.x et NodeJs"
   },
   "Diplome": [ 
     {
